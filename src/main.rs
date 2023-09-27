@@ -9,7 +9,7 @@ use image::Pixel;
 const HEIGHT : u32 = 1080 * 10;
 const WIDTH : u32 = 1920 * 10;
 fn main() -> io::Result<()> {
-    let file = File::open("C:/Users/itsmr/Desktop/gen output folder/roots.txt")?;
+    let file = File::open("roots.txt")?;
     let reader = BufReader::new(file);
     let mut count = vec![vec![0_i32; WIDTH as usize]; HEIGHT as usize];
 
